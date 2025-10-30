@@ -1,0 +1,55 @@
+.genericInput {
+    background-color: rgba(255,255,255,.15);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: none;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+}
+
+.genericInput:focus {
+    outline: 1px solid rgb(119, 2, 29);
+}
+
+.genericLabel {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    padding-left: 1px;
+}
+
+.labelSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.genericButton {
+    border: none;
+    color: white;
+    padding: 18px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.genericButton:hover {
+    color: white;
+    background-color: #C23028;
+    transform: scale(1.03);
+}
+
+.redButton
+{
+    background-color: var(--background-red-overlay);
+}
+
+.blackButton
+{
+    background-color: var(--background-black-overlay);
+}

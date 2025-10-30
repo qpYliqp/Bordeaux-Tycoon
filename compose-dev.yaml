@@ -1,0 +1,56 @@
+services:
+  webapp:
+    container_name: webapp
+    build: "webapp/"
+    develop:
+      watch:
+        - path: ./webapp/src
+          target: /app/src
+          ignore:
+            - node_modules/
+          action: sync
+
+
+  api:
+    container_name: api
+    build: "api/"
+    develop:
+      watch:
+        - path: ./api/src
+          target: /app/src
+          ignore:
+            - node_modules/
+          action: sync
+    
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=project
+    volumes:
+      - mongodb_data:/data/db
+
+  redis:
+    image: "redis:alpine"
+    container_name: redis
+    volumes:
+      - redis-data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+
+  reverseproxy:
+    restart: always
+    build:
+      context: reverse-proxy/
+      dockerfile: ./Dockerfile.dev
+    depends_on:
+      - api
+      - webapp
+    volumes:
+      - ./reverse-proxy/log:/var/log/nginx
+    ports:
+      - 9080:80
+
+volumes:
+    mongodb_data:
+    redis-data:

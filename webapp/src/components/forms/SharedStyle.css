@@ -1,0 +1,24 @@
+.menu {
+    width: 375px;
+    height: fit-content;
+    background-color: var(--background-black-overlay);
+    padding-bottom: 35px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonContainer > button {
+    width: 180px;
+}

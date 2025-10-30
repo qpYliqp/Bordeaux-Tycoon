@@ -1,0 +1,140 @@
+.buildingDetailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 80px;
+    padding: 15px;
+    position: relative;
+}
+
+.moneyContainer
+{
+    align-self: flex-end;
+    height: 30px;
+    background-color: var(--background-black-overlay);
+    color:  white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.money
+{
+    color: var(--font-green)
+}
+
+.detailContainer
+{
+    width: 1300px;
+    height: 500px;
+    color: white;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mapContainer
+{
+    flex : 2;
+    background-color: var(--background-black-overlay);
+    height: 100%;
+}
+
+.informationContainer
+{
+    flex: 4;
+    background-color: var(--background-black-overlay);
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variable-highlight-name
+{
+    color: #CF4146;
+}
+
+.variable-highlight-price
+{
+    color: #CF4146;
+}
+
+.sharesContainer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-grey);
+    height: 200px;
+    width: 100%;
+    gap: 0px !important;
+}
+
+.share {
+    min-height: 75px;
+    background-color: var(--background-black-overlay);
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* Ajustez les proportions si nécessaire */
+    align-items: center;
+    justify-items: center;
+    gap: 20px; /* Espace entre les colonnes */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buyButton
+{
+    margin-top: 10px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+  }
+  
+  .modalContent {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .modalActions {
+    display: flex;
+    justify-content: space-around;
+    user-select: none;
+  }
+
+  .buttonRow
+  {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 20px;
+
+  }

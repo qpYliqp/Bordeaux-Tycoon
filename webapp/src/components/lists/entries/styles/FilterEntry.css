@@ -1,0 +1,48 @@
+.icon {
+    height: 48px;
+    width: 48px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.rounded {
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-black);
+}
+
+.ticked {
+    background-color: var(--background-rorange);
+}
+
+.leftGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 50px;
+    width: 325px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.entry:hover {
+    background-color: var(--background-rorange);
+    cursor: pointer;
+}
+

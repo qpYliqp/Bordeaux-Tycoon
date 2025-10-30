@@ -1,0 +1,12 @@
+
+.listContainer {
+    background-color: var(--background-tinted-black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.offset {
+    padding: 15px;
+}

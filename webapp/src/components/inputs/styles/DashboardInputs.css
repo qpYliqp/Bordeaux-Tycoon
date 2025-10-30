@@ -1,0 +1,14 @@
+.dashboardButton
+{
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.75);
+    border: none;
+    color: white;
+}
+
+.dashboardButton:hover
+{
+    background-color: var(--background-red-overlay);
+    cursor: pointer;
+}

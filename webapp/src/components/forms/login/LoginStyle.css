@@ -1,0 +1,6 @@
+hr {
+    width: 100%;
+    display: block;
+    border: 0;
+    border-top: 3px solid rgb(119,2,29);
+}

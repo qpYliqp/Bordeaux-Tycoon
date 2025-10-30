@@ -1,0 +1,38 @@
+:root
+{
+    --background-black-overlay: rgba(0, 0, 0, 0.75);
+    --background-more-black-overlay: rgba(0, 0, 0, 0.9);
+    --background-red-overlay:  rgba(119,2,29,.5);
+    --background-red:  rgb(119,2,29);
+    --background-black: rgb(0, 0, 0);
+    --background-tinted-black: rgba(0,0,0,0.5);
+    --background-rorange: #c23028;
+    --background-grey: rgba(255,255,255,.15);
+    --font-green: #59FF83;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Alexandria, ui-sans-serif;
+    overflow: hidden;
+}
+
+span
+{
+    font-family: Alexandria, ui-sans-serif;
+}
+
+.scrollable {
+    overflow-y:scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #c23028 rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria'), url(/fonts/Alexandria-VariableFont_wght.ttf) format('truetype');
+}

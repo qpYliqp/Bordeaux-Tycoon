@@ -1,0 +1,12 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttonsContainer { /* Ajoutez ce nouveau conteneur pour les boutons */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
