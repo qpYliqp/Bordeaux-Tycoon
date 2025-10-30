@@ -2,7 +2,7 @@
 
 Pour lancer le site, il suffit simplement d'utiliser la commande
 ```
-docker compose -f compose-prod up
+docker compose -f compose-prod.yaml up -d
 ```
 
 Si vous souhaitez utiliser le compose de développement, il est nécessaire d'avoir la version 2.22 de docker compose.
